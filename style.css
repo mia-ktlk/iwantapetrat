@@ -22,13 +22,10 @@ span.mason {
     height: 100vh;
   }
 
-  h1.pink {
-    color: pink;
-}
 
 .blinking{
     animation:blinkingText 1.2s infinite;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: pressStart;
 }
 @keyframes blinkingText{
