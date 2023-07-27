@@ -1,3 +1,20 @@
+@font-face {
+    font-family: pressStart;
+    src: url(font/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+img.img-fluid.mt-5 {
+    height: 80vh;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+span.mason {
+    font-size: 7rem;
+}
+
 #flyer {
     background: url(img/flyer.JPG);
     background-repeat: repeat;
@@ -8,3 +25,66 @@
   h1.pink {
     color: pink;
 }
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+    font-size: 5rem;
+    font-family: pressStart;
+}
+@keyframes blinkingText{
+    0%{     color: #FF3131;    }
+    49%{    color: #FFF01F; }
+    60%{    color: #39FF14; }
+    99%{    color:#8A2BE2;  }
+    100%{   color: #FF44CC;    }
+}
+
+
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    color: white;
+    font-size: 8rem;
+    font-family: pressStart;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 5s linear infinite;
+    font-family: pressStart;
+  }
+  
+  .marquee2 span {
+    animation-delay: 100s;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+
+  html {
+    cursor: none;
+    overflow: hidden;
+  }
+  
+  .box {
+    position: absolute;
+    animation: rotate 2.5s infinite linear;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
